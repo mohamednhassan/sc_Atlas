@@ -1,0 +1,34 @@
+---
+title: ""
+date: "`r format(Sys.time(),  '%d %B %Y')`"
+author: "Mohamed Hassan"
+output:
+  html_notebook:
+    theme: cerulean
+    toc: true
+    toc_depth: 3
+editor_options:
+  markdown:
+    wrap: 72
+---
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = T, results = "hide")
+require("knitr")
+# opts_knit$set(root.dir = "/")
+```
+
+
+```{r random-seed-setting}
+set.seed(12345)
+```
+
+```{r loading-libraries, results='hide'}
+library(tidyverse)
+library(Seurat)
+library(patchwork)
+library(DoubletFinder)
+library(remotes)
+```
+
+# 1.
+
