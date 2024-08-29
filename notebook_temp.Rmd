@@ -23,11 +23,7 @@ set.seed(12345)
 ```
 
 ```{r loading-libraries, results='hide'}
-library(tidyverse)
-library(Seurat)
-library(patchwork)
-library(DoubletFinder)
-library(remotes)
+pacman::p_load(tidyverse, Seurat, styler, remotes) ## using pacman instead of library
 ```
 
 # 1.
